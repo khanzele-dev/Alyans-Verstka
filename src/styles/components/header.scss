@@ -32,6 +32,15 @@
     color: $color-text-white;
     cursor: pointer;
     letter-spacing: -2%;
+
+    a {
+      color: $color-text-white;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      &:hover {
+        color: $color-primary;
+      }
+    }
   }
 
   &__contact {
@@ -97,13 +106,14 @@
       margin: 5px 0 auto 0;
     }
 
-    p:first-child {
+    a {
       font-size: 24px;
       font-weight: 600;
       line-height: 120%;
       letter-spacing: -2%;
+      text-decoration: none;
     }
-    p:last-child {
+    p {
       font-size: 14px;
       line-height: -1%;
       font-weight: 400;
