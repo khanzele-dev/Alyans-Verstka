@@ -530,8 +530,8 @@
           <div class="calculator-section__left">
             <svg
               width="809"
-              height="590"
               class="calculator-section__bg-svg"
+              height="590"
               viewBox="0 0 809 590"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -621,7 +621,8 @@
                     id="calc-area"
                     class="calculator-section__input"
                     type="text"
-                    pattern=""
+                    pattern="[0-9]*"
+                    inputmode="numeric"
                     placeholder="0"
                   />
                   <p class="calculator-section__square-unit">м²</p>
@@ -636,7 +637,8 @@
                     id="calc-land"
                     class="calculator-section__input"
                     type="text"
-                    pattern=""
+                    pattern="[0-9]*"
+                    inputmode="numeric"
                     placeholder="0"
                   />
                   <p class="calculator-section__square-unit">м²</p>
@@ -736,7 +738,7 @@
               Этапы разработки проектной документации
             </h3>
             <ul class="stages-section__levels">
-              <li class="stages-section__level_one">
+              <li class="stages-section__level">
                 <p class="stages-section__number">1</p>
                 <p class="stages-section__name">Подготовка</p>
                 <p class="stages-section__description">
@@ -745,7 +747,7 @@
                   разработаем техническое задание.
                 </p>
               </li>
-              <li class="stages-section__level_two">
+              <li class="stages-section__level">
                 <p class="stages-section__number">2</p>
                 <p class="stages-section__name">Проектирование</p>
                 <p class="stages-section__description">
@@ -754,8 +756,12 @@
                   задания, изысканий и пакета Исходно-разрешительной
                   документации
                 </p>
-                <button class="btn btn-secondary btn-consultation">
-                  <p>Консультация</p>
+                <button
+                  class="btn btn-secondary stages-section__btn-consultation"
+                >
+                  <span class="stages-section__btn-consultation-text"
+                    >Консультация</span
+                  >
                   <svg
                     width="13"
                     height="13"
@@ -875,7 +881,11 @@
             <h3 class="banner-section__content-title">
               Разработка и экспертиза проектной ​ документации "под ключ"
             </h3>
-            <p class="banner-section__content-text">Закажите разработку проектной документации с прохождением экспертизы проекта. Получите экономию времени, и гарантированный результат в виде Разрешения на Строительство объекта!</p>
+            <p class="banner-section__content-text">
+              Закажите разработку проектной документации с прохождением
+              экспертизы проекта. Получите экономию времени, и гарантированный
+              результат в виде Разрешения на Строительство объекта!
+            </p>
             <button class="btn btn-primary btn-order">Заказать</button>
           </div>
           <svg
