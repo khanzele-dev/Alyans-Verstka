@@ -32,14 +32,14 @@
     color: $color-text-white;
     cursor: pointer;
     letter-spacing: -2%;
+  }
 
-    a {
-      color: $color-text-white;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      &:hover {
-        color: $color-primary;
-      }
+  &__item-link {
+    color: $color-text-white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    &:hover {
+      color: $color-primary;
     }
   }
 
@@ -49,14 +49,14 @@
     align-items: center;
     gap: 14px;
     cursor: pointer;
+  }
 
-    p {
-      font-size: 20px;
-      font-weight: 500;
-      line-height: 220%;
-      letter-spacing: -2%;
-      color: $color-text-white;
-    }
+  &__contact-text {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 220%;
+    letter-spacing: -2%;
+    color: $color-text-white;
   }
 
   &__content {
@@ -77,14 +77,14 @@
     flex-direction: row;
     align-items: center;
     gap: 20px;
+  }
 
-    & > p {
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 110%;
-      letter-spacing: -1%;
-      width: 160px;
-    }
+  &__tagline {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: -1%;
+    width: 160px;
   }
   &__right {
     display: flex;
@@ -97,28 +97,30 @@
     display: flex;
     align-items: center;
     gap: 12px;
+  }
 
-    & div {
-      width: 6px;
-      height: 6px;
-      background-color: #28bc68;
-      border-radius: 50%;
-      margin: 5px 0 auto 0;
-    }
+  &__phone-indicator {
+    width: 6px;
+    height: 6px;
+    background-color: #28bc68;
+    border-radius: 50%;
+    margin: 5px 0 auto 0;
+  }
 
-    a {
-      font-size: 24px;
-      font-weight: 600;
-      line-height: 120%;
-      letter-spacing: -2%;
-      text-decoration: none;
-    }
-    p {
-      font-size: 14px;
-      line-height: -1%;
-      font-weight: 400;
-      width: 120px;
-    }
+  &__phone-number {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -2%;
+    text-decoration: none;
+    color: $color-text;
+  }
+
+  &__phone-text {
+    font-size: 14px;
+    line-height: -1%;
+    font-weight: 400;
+    width: 120px;
   }
 
   &__social {
@@ -126,15 +128,15 @@
     flex-direction: row;
     align-items: center;
     gap: 12px;
+  }
 
-    a {
-      display: flex;
-      opacity: 0.75;
-      transition: opacity 0.2s;
+  &__social-link {
+    display: flex;
+    opacity: 0.75;
+    transition: opacity 0.2s;
 
-      &:hover {
-        opacity: 1;
-      }
+    &:hover {
+      opacity: 1;
     }
   }
 }
@@ -144,10 +146,4 @@
   flex-direction: row;
   align-items: center;
   gap: 10px;
-
-  h2 {
-    font-size: 22px;
-    font-weight: 700;
-    letter-spacing: 0.02em;
-  }
 }

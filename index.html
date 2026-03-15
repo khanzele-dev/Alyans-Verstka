@@ -11,12 +11,24 @@
       <div class="header__top">
         <div class="container header__top-inner">
           <ul class="header__list">
-            <li class="header__item"><a href="#">Проектирование</a></li>
-            <li class="header__item"><a href="#">Изыскания</a></li>
-            <li class="header__item"><a href="#">Визуализация</a></li>
-            <li class="header__item"><a href="#">Экспертиза</a></li>
-            <li class="header__item"><a href="#">Строительство</a></li>
-            <li class="header__item"><a href="#">Сопровождение</a></li>
+            <li class="header__item">
+              <a class="header__item-link" href="#">Проектирование</a>
+            </li>
+            <li class="header__item">
+              <a class="header__item-link" href="#">Изыскания</a>
+            </li>
+            <li class="header__item">
+              <a class="header__item-link" href="#">Визуализация</a>
+            </li>
+            <li class="header__item">
+              <a class="header__item-link" href="#">Экспертиза</a>
+            </li>
+            <li class="header__item">
+              <a class="header__item-link" href="#">Строительство</a>
+            </li>
+            <li class="header__item">
+              <a class="header__item-link" href="#">Сопровождение</a>
+            </li>
           </ul>
           <div class="header__contact">
             <svg
@@ -33,7 +45,7 @@
                 fill="#FB4D03"
               />
             </svg>
-            <p>Контакты</p>
+            <p class="header__contact-text">Контакты</p>
           </div>
         </div>
       </div>
@@ -73,17 +85,19 @@
                 </svg>
               </a>
             </div>
-            <p>Разработка проектной документации</p>
+            <p class="header__tagline">Разработка проектной документации</p>
           </div>
 
           <div class="header__right">
             <div class="header__phone">
-              <a href="tel:+74997072989">+7 499 707-29-89</a>
-              <div></div>
-              <p>Звоните по всем вопросам</p>
+              <a class="header__phone-number" href="tel:+74997072989"
+                >+7 499 707-29-89</a
+              >
+              <div class="header__phone-indicator"></div>
+              <p class="header__phone-text">Звоните по всем вопросам</p>
             </div>
             <div class="header__social">
-              <a href="#">
+              <a class="header__social-link" href="#">
                 <svg
                   width="27"
                   height="27"
@@ -103,7 +117,7 @@
                   />
                 </svg>
               </a>
-              <a href="#">
+              <a class="header__social-link" href="#">
                 <svg
                   width="27"
                   height="27"
@@ -127,6 +141,7 @@
       <div class="development-section">
         <div class="development-section__bg">
           <svg
+            class="development-section__bg-decoration"
             width="675"
             height="763"
             viewBox="0 0 675 763"
@@ -155,18 +170,27 @@
             />
           </svg>
 
-          <img src="./DevelopmentBackground.png" alt="" />
+          <img
+            class="development-section__bg-image"
+            src="./DevelopmentBackground.png"
+            alt=""
+          />
         </div>
         <div class="development-section__container container">
           <div class="development-section__content">
-            <h2>
-              Разработка <span>проектной документац​ии</span> строительных
-              объектов
+            <h2 class="development-section__heading">
+              Разработка
+              <span class="development-section__heading-accent"
+                >проектной документац​ии</span
+              >
+              строительных объектов
             </h2>
-            <p>
+            <p class="development-section__text">
               Разработка проектной документации осуществляется в соответствии с
               Постановлением Правительства РФ от 16.08.2008 № 87.
-              <span>Предоставляются услуги подготовки пакета ИРД</span>
+              <span class="development-section__text-accent"
+                >Предоставляются услуги подготовки пакета ИРД</span
+              >
             </p>
             <div class="development-section__actions">
               <button class="btn btn-primary">Заказать разработку</button>
@@ -179,6 +203,7 @@
         <ul class="features-section__container container">
           <li class="features-section__item">
             <svg
+              class="features-section__item-icon"
               width="51"
               height="51"
               viewBox="0 0 51 51"
@@ -252,10 +277,13 @@
                 />
               </g>
             </svg>
-            <p>Разработка дизайн проектов и 3D визуализации</p>
+            <p class="features-section__item-text">
+              Разработка дизайн проектов и 3D визуализации
+            </p>
           </li>
           <li class="features-section__item">
             <svg
+              class="features-section__item-icon"
               width="45"
               height="45"
               viewBox="0 0 45 45"
@@ -345,10 +373,13 @@
                 />
               </g>
             </svg>
-            <p>Разрабатываем все разделы проектной документации</p>
+            <p class="features-section__item-text">
+              Разрабатываем все разделы проектной документации
+            </p>
           </li>
           <li class="features-section__item">
             <svg
+              class="features-section__item-icon"
               width="37"
               height="48"
               viewBox="0 0 37 48"
@@ -364,15 +395,19 @@
                 fill="#FB4D03"
               />
             </svg>
-            <p>Помощь в прохождении экспертизы ПД</p>
+            <p class="features-section__item-text">
+              Помощь в прохождении экспертизы ПД
+            </p>
           </li>
         </ul>
       </div>
       <div class="project-section">
         <div class="project-section__container container">
           <div class="project-section__title">
-            <h2>Услуги по разработке и экспертизе проектов</h2>
-            <p>
+            <h2 class="project-section__title-heading">
+              Услуги по разработке и экспертизе проектов
+            </h2>
+            <p class="project-section__title-text">
               Полный комплекс услуг для строительства объектов различной
               сложности
             </p>
@@ -380,51 +415,101 @@
           <ul class="project-section__list">
             <li class="project-section__row">
               <div class="project-section__item">
-                <p>Разработка проектной и рабочей документации</p>
-                <img src="./DevelopmentFirst.png" alt="" />
+                <p class="project-section__item-text">
+                  Разработка проектной и рабочей документации
+                </p>
+                <img
+                  class="project-section__item-img"
+                  src="./DevelopmentFirst.png"
+                  alt=""
+                />
               </div>
               <div class="project-section__item">
-                <p>Проведение инженерных изысканий</p>
-                <img src="./DevelopmentSecond.png" alt="" />
+                <p class="project-section__item-text">
+                  Проведение инженерных изысканий
+                </p>
+                <img
+                  class="project-section__item-img"
+                  src="./DevelopmentSecond.png"
+                  alt=""
+                />
               </div>
               <div class="project-section__item">
-                <p>Услуги строительства объектов</p>
-                <img src="./DevelopmentThird.png" alt="" />
+                <p class="project-section__item-text">
+                  Услуги строительства объектов
+                </p>
+                <img
+                  class="project-section__item-img"
+                  src="./DevelopmentThird.png"
+                  alt=""
+                />
               </div>
             </li>
             <li class="project-section__row project-section__row--center">
               <div class="project-section__item">
-                <p>Сопровождения строительства</p>
-                <img src="./DevelopmentFourth.png" alt="" />
+                <p class="project-section__item-text">
+                  Сопровождения строительства
+                </p>
+                <img
+                  class="project-section__item-img"
+                  src="./DevelopmentFourth.png"
+                  alt=""
+                />
               </div>
               <div class="project-section__item">
-                <p>Техническое обследование зданий</p>
-                <img src="./DevelopmentFiveth.png" alt="" />
+                <p class="project-section__item-text">
+                  Техническое обследование зданий
+                </p>
+                <img
+                  class="project-section__item-img"
+                  src="./DevelopmentFiveth.png"
+                  alt=""
+                />
               </div>
             </li>
             <li class="project-section__row">
               <div class="project-section__item">
-                <p>Экспертиза проектной документации</p>
-                <img src="./DevelopmentSixth.png" alt="" />
+                <p class="project-section__item-text">
+                  Экспертиза проектной документации
+                </p>
+                <img
+                  class="project-section__item-img"
+                  src="./DevelopmentSixth.png"
+                  alt=""
+                />
               </div>
               <div class="project-section__item">
-                <p>Разработка дизайн проектов и визуализации</p>
-                <img src="./DevelopmentSeventh.png" alt="" />
+                <p class="project-section__item-text">
+                  Разработка дизайн проектов и визуализации
+                </p>
+                <img
+                  class="project-section__item-img"
+                  src="./DevelopmentSeventh.png"
+                  alt=""
+                />
               </div>
               <div class="project-section__item">
-                <p>Помощь в прохождении экспертизы </p>
-                <img src="./DevelopmentEighth.png" alt="" />
+                <p class="project-section__item-text">
+                  Помощь в прохождении экспертизы
+                </p>
+                <img
+                  class="project-section__item-img"
+                  src="./DevelopmentEighth.png"
+                  alt=""
+                />
               </div>
             </li>
           </ul>
           <ul class="project-section__features">
             <li class="project-section__card">
-              <h3>Качество</h3>
-              <p>Дипломированные специалисты с опытом более 15 лет</p>
+              <h3 class="project-section__card-title">Качество</h3>
+              <p class="project-section__card-text">
+                Дипломированные специалисты с опытом более 15 лет
+              </p>
             </li>
             <li class="project-section__card">
-              <h3>Сроки</h3>
-              <p>
+              <h3 class="project-section__card-title">Сроки</h3>
+              <p class="project-section__card-text">
                 Оптимальный срок разработки проектной документации, всегда в
                 срок
               </p>
@@ -432,8 +517,10 @@
             <li
               class="project-section__card project-section__card--verification"
             >
-              <h3>Экспертиза</h3>
-              <p>Получение положительного заключения экпертизы ПД</p>
+              <h3 class="project-section__card-title">Экспертиза</h3>
+              <p class="project-section__card-text">
+                Получение положительного заключения экпертизы ПД
+              </p>
             </li>
           </ul>
         </div>
@@ -499,10 +586,14 @@
                   </clipPath>
                 </defs>
               </svg>
-              <h3>
-                Расчет <span>стоимости</span> разработки проектной документации
+              <h3 class="calculator-section__left-heading">
+                Расчет
+                <span class="calculator-section__left-heading-accent"
+                  >стоимости</span
+                >
+                разработки проектной документации
               </h3>
-              <p>
+              <p class="calculator-section__left-text">
                 Заполните форму, мы расчитаем предварительную стоимость
                 разработки проектной документации и свяжемся с Вами
               </p>
@@ -510,22 +601,45 @@
           </div>
           <div class="calculator-section__right">
             <div class="calculator-section__naming">
-              <label>Наименование и адрес объекта</label>
-              <input type="text" placeholder="Название и адрес обьекта" />
+              <label class="calculator-section__naming-label" for="calc-naming"
+                >Наименование и адрес объекта</label
+              >
+              <input
+                id="calc-naming"
+                class="calculator-section__naming-input"
+                type="text"
+                placeholder="Название и адрес обьекта"
+              />
             </div>
             <div class="calculator-section__square">
               <div class="calculator-section__wrapper">
-                <label>Площадь объекта</label>
+                <label class="calculator-section__square-label" for="calc-area"
+                  >Площадь объекта</label
+                >
                 <div class="calculator-section__input-wrapper">
-                  <input type="text" pattern="" placeholder="0" />
-                  <p>м²</p>
+                  <input
+                    id="calc-area"
+                    class="calculator-section__input"
+                    type="text"
+                    pattern=""
+                    placeholder="0"
+                  />
+                  <p class="calculator-section__square-unit">м²</p>
                 </div>
               </div>
               <div class="calculator-section__wrapper">
-                <label>Площадь земельного участка</label>
+                <label class="calculator-section__square-label" for="calc-land"
+                  >Площадь земельного участка</label
+                >
                 <div class="calculator-section__input-wrapper">
-                  <input type="text" pattern="" placeholder="0" />
-                  <p>м²</p>
+                  <input
+                    id="calc-land"
+                    class="calculator-section__input"
+                    type="text"
+                    pattern=""
+                    placeholder="0"
+                  />
+                  <p class="calculator-section__square-unit">м²</p>
                 </div>
               </div>
             </div>
@@ -535,9 +649,14 @@
               </p>
               <ul class="calculator-section__stages-list">
                 <li class="calculator-section__stage-item">
-                  <label class="calculator-section__stage-option">
+                  <label
+                    class="calculator-section__stage-option"
+                    for="calc-stage-p"
+                  >
                     <input
-                      type="radio"
+                      id="calc-stage-p"
+                      class="calculator-section__radio"
+                      type="checkbox"
                       name="calc-stage"
                       value="stage-p"
                       checked
@@ -549,8 +668,17 @@
                   </label>
                 </li>
                 <li class="calculator-section__stage-item">
-                  <label class="calculator-section__stage-option">
-                    <input type="radio" name="calc-stage" value="stage-r" />
+                  <label
+                    class="calculator-section__stage-option"
+                    for="calc-stage-r"
+                  >
+                    <input
+                      id="calc-stage-r"
+                      class="calculator-section__radio"
+                      type="checkbox"
+                      name="calc-stage"
+                      value="stage-r"
+                    />
                     <span class="calculator-section__stage-checkbox"></span>
                     <span class="calculator-section__stage-text"
                       >Рабочая документация (Стадия Р)</span
@@ -558,8 +686,17 @@
                   </label>
                 </li>
                 <li class="calculator-section__stage-item">
-                  <label class="calculator-section__stage-option">
-                    <input type="radio" name="calc-stage" value="bim" />
+                  <label
+                    class="calculator-section__stage-option"
+                    for="calc-stage-bim"
+                  >
+                    <input
+                      id="calc-stage-bim"
+                      class="calculator-section__radio"
+                      type="checkbox"
+                      name="calc-stage"
+                      value="bim"
+                    />
                     <span class="calculator-section__stage-checkbox"></span>
                     <span class="calculator-section__stage-text"
                       >BIM проектирование (3D)</span
@@ -570,7 +707,7 @@
               <div class="calculator-section__nav">
                 <button class="btn calculator-section__btn-back">Назад</button>
                 <button class="btn btn-primary calculator-section__btn-next">
-                  <p>Далее</p>
+                  <p class="calculator-section__btn-text">Далее</p>
                   <svg
                     width="7"
                     height="12"
@@ -581,9 +718,9 @@
                     <path
                       d="M1 1L6 6L1 11"
                       stroke="white"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
                     />
                   </svg>
                 </button>
@@ -595,10 +732,184 @@
       <div class="stages-section">
         <div class="stages-section__container container">
           <div class="stages-section__content">
-            <div class="stages-section__title">
-              <h3>Этапы разработки проектной документации</h3>
-            </div>
+            <h3 class="stages-section__title">
+              Этапы разработки проектной документации
+            </h3>
+            <ul class="stages-section__levels">
+              <li class="stages-section__level_one">
+                <p class="stages-section__number">1</p>
+                <p class="stages-section__name">Подготовка</p>
+                <p class="stages-section__description">
+                  Оказываем помощь в получении ИРД, создаем эскизный проект,
+                  согласуем архитектурные решения, сформируем генеральный план,
+                  разработаем техническое задание.
+                </p>
+              </li>
+              <li class="stages-section__level_two">
+                <p class="stages-section__number">2</p>
+                <p class="stages-section__name">Проектирование</p>
+                <p class="stages-section__description">
+                  Согласованнные и утвержденные заказчиком решения формируются в
+                  разделы проекта по 87 постановлению на основе Технического
+                  задания, изысканий и пакета Исходно-разрешительной
+                  документации
+                </p>
+                <button class="btn btn-secondary btn-consultation">
+                  <p>Консультация</p>
+                  <svg
+                    width="13"
+                    height="13"
+                    viewBox="0 0 13 13"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_25_1184)">
+                      <path
+                        d="M0.0931256 2.00859C-0.00998833 1.72888 -0.0266465 1.42465 0.0453133 1.13536C0.117273 0.84607 0.274528 0.585091 0.496667 0.386295C0.717008 0.186826 0.992073 0.0579698 1.28636 0.016356C1.58065 -0.0252577 1.88066 0.0222808 2.14767 0.152837L11.9464 4.72667C12.2003 4.84389 12.426 5.01459 12.6078 5.22709C12.7896 5.4396 12.9234 5.68888 13 5.95788H2.19263L0.124001 2.07738C0.112611 2.05496 0.102307 2.032 0.0931256 2.00859ZM2.20021 7.04175L0.167334 10.9282C0.156038 10.9495 0.146263 10.9716 0.138084 10.9943C0.035388 11.2741 0.0191601 11.5782 0.0915068 11.8673C0.163853 12.1564 0.321434 12.4171 0.543792 12.6155C0.817501 12.862 1.17267 12.9986 1.541 12.999C1.76254 12.999 1.98463 12.9492 2.19154 12.8479L11.9475 8.2773C12.2019 8.15973 12.4278 7.98846 12.6096 7.77527C12.7915 7.56208 12.925 7.31202 13.001 7.0423H2.20021V7.04175Z"
+                        fill="#FB4D03"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_25_1184">
+                        <rect width="13" height="13" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </li>
+            </ul>
           </div>
+          <div class="stages-section__plan">
+            <svg
+              class="stages-section__plan-icon"
+              width="38"
+              height="42"
+              viewBox="0 0 38 42"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.6046 32.962C18.5656 32.1865 18.5298 31.7655 18.5298 31.3477C18.5233 28.5401 18.4647 25.7261 18.5558 22.9217C18.5916 21.76 18.1426 21.1428 17.1403 20.6078C14.5078 19.212 11.9273 17.7243 9.33384 16.2619C8.99867 16.072 8.69605 15.8251 8.24048 15.5054C10.6127 14.1697 12.9947 13.0998 15.0447 11.5994C17.456 9.83955 19.4735 9.89336 21.8555 11.6089C23.7656 12.9858 25.9816 13.9481 28.0186 15.1636C28.3896 15.3851 28.7703 15.9296 28.7801 16.3284C28.8517 19.6899 28.8517 23.0546 28.8256 26.4161C28.8256 26.7517 28.5914 27.2328 28.3115 27.3942C25.1974 29.2174 22.054 30.9931 18.6112 32.9525L18.6046 32.962Z"
+                fill="#FB4D03"
+              />
+              <path
+                d="M36.9479 13.7344C37.0071 14.4613 37.0601 14.8341 37.0632 15.21C37.0694 20.6403 37.057 26.0736 37.0819 31.5039C37.085 32.2681 36.9136 32.7559 36.1814 33.1721C31.2052 36.0022 26.2601 38.8913 21.3026 41.7525C21.153 41.8395 20.9442 41.827 20.6077 41.8892C20.6077 40.0718 20.5797 38.3477 20.6389 36.6266C20.6482 36.3905 21.0564 36.1141 21.3368 35.9525C24.7239 34.0016 28.1048 32.0414 31.523 30.1495C32.2895 29.727 32.5575 29.2144 32.5513 28.3943C32.5294 24.8248 32.5575 21.2554 32.5294 17.6859C32.5201 16.7757 32.785 16.1575 33.6387 15.7195C34.6919 15.1789 35.6766 14.5079 36.9479 13.7375V13.7344Z"
+                fill="#FB4D03"
+              />
+              <path
+                d="M30.8471 12.3606C30.1123 11.9647 29.4383 11.6281 28.7866 11.2519C25.6399 9.41722 22.5125 7.53634 19.3371 5.75775C18.8898 5.50697 18.0816 5.50697 17.6344 5.75775C14.1076 7.73433 10.6223 9.7868 7.14342 11.8492C6.48534 12.2385 5.93907 12.3309 5.2714 11.869C4.4472 11.2981 3.57828 10.7866 2.69978 10.3148C1.78933 9.8264 1.90433 9.45352 2.70617 8.97175C7.17856 6.29232 11.6989 3.69538 16.0722 0.850957C17.8356 -0.294072 19.1103 -0.274273 20.8673 0.854256C25.2502 3.67228 29.7833 6.23622 34.2493 8.91896C35.2939 9.54592 35.2811 9.7934 34.1982 10.4402C33.1056 11.0935 31.9875 11.7073 30.8471 12.3573V12.3606Z"
+                fill="#FB4D03"
+              />
+              <path
+                d="M16.4587 41.8892C11.1149 38.8347 6.15394 35.99 1.18031 33.1705C0.348211 32.7006 -0.00930778 32.1273 0.000183873 31.1216C0.0571338 25.7989 0.0254944 20.4762 0.0286583 15.1535C0.0286583 14.7807 0.0697888 14.4048 0.107755 13.7344C1.47455 14.5802 2.67683 15.2193 3.73357 16.0433C4.05945 16.297 4.07526 17.0552 4.08159 17.5815C4.11007 21.0652 4.10058 24.5489 4.09425 28.0326C4.09425 29.0163 4.43911 29.6586 5.38828 30.1724C8.83058 32.0458 12.2223 34.007 15.595 36.0026C16.0063 36.2469 16.3828 36.8735 16.4207 37.3497C16.5283 38.7626 16.4587 40.1912 16.4587 41.8892Z"
+                fill="#FB4D03"
+              />
+            </svg>
+
+            <h3 class="stages-section__plan-title">
+              Мы выполняем 3 стадии проектирования объекта
+            </h3>
+            <ul class="stages-section__list">
+              <li class="stages-section__item">
+                <svg
+                  width="17"
+                  height="16"
+                  viewBox="0 0 17 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="8" cy="8" r="8" fill="#F1D6CB" />
+                  <path
+                    d="M4.5 7L6.79289 9.29289C7.18342 9.68342 7.81658 9.68342 8.20711 9.29289L15.5 2"
+                    stroke="#BA4B1C"
+                    stroke-width="1.2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                <p class="stages-section__item-text">Эскизный проект</p>
+              </li>
+              <li class="stages-section__item stages-section__item--center">
+                <svg
+                  width="17"
+                  height="16"
+                  viewBox="0 0 17 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="8" cy="8" r="8" fill="#F1D6CB" />
+                  <path
+                    d="M4.5 7L6.79289 9.29289C7.18342 9.68342 7.81658 9.68342 8.20711 9.29289L15.5 2"
+                    stroke="#BA4B1C"
+                    stroke-width="1.2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                <p class="stages-section__item-text">Проектная документация</p>
+              </li>
+              <li class="stages-section__item">
+                <svg
+                  width="17"
+                  height="16"
+                  viewBox="0 0 17 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="8" cy="8" r="8" fill="#F1D6CB" />
+                  <path
+                    d="M4.5 7L6.79289 9.29289C7.18342 9.68342 7.81658 9.68342 8.20711 9.29289L15.5 2"
+                    stroke="#BA4B1C"
+                    stroke-width="1.2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+                <p class="stages-section__item-text">Рабочая документация</p>
+              </li>
+            </ul>
+            <button class="btn btn-primary">Заказать разработку</button>
+          </div>
+        </div>
+      </div>
+      <div class="banner-section">
+        <div class="banner-section__container container">
+          <div class="banner-section__content">
+            <h3 class="banner-section__content-title">
+              Разработка и экспертиза проектной ​ документации "под ключ"
+            </h3>
+            <p class="banner-section__content-text">Закажите разработку проектной документации с прохождением экспертизы проекта. Получите экономию времени, и гарантированный результат в виде Разрешения на Строительство объекта!</p>
+            <button class="btn btn-primary btn-order">Заказать</button>
+          </div>
+          <svg
+            width="236"
+            height="212"
+            viewBox="0 0 236 212"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="153" cy="129" r="83" fill="#FB4D03" />
+            <circle
+              cx="104"
+              cy="104"
+              r="104"
+              fill="#F1F1F1"
+              fill-opacity="0.2"
+            />
+            <path
+              d="M104.11 125.889C104.042 124.551 103.981 123.824 103.981 123.103C103.969 118.257 103.868 113.401 104.026 108.56C104.087 106.555 103.312 105.49 101.582 104.567C97.039 102.158 92.5853 99.5901 88.1092 97.0662C87.5307 96.7384 87.0084 96.3123 86.2222 95.7605C90.3164 93.4552 94.4274 91.6087 97.9657 89.0192C102.127 85.9818 105.609 86.0747 109.72 89.0356C113.017 91.412 116.842 93.0728 120.357 95.1705C120.998 95.5529 121.655 96.4926 121.672 97.1809C121.795 102.983 121.795 108.79 121.75 114.591C121.75 115.171 121.346 116.001 120.863 116.28C115.488 119.426 110.063 122.491 104.121 125.873L104.11 125.889Z"
+              fill="white"
+            />
+            <path
+              d="M135.769 92.7039C135.871 93.9585 135.962 94.6019 135.968 95.2506C135.978 104.623 135.957 114 136 123.372C136.005 124.691 135.71 125.533 134.446 126.252C125.857 131.136 117.322 136.122 108.766 141.061C108.508 141.211 108.148 141.189 107.567 141.296C107.567 138.16 107.519 135.184 107.621 132.214C107.637 131.806 108.341 131.329 108.825 131.05C114.671 127.683 120.506 124.3 126.406 121.035C127.729 120.306 128.191 119.421 128.18 118.005C128.143 111.845 128.191 105.684 128.143 99.5239C128.127 97.9529 128.584 96.8859 130.057 96.1299C131.875 95.197 133.574 94.0389 135.769 92.7092V92.7039Z"
+              fill="white"
+            />
+            <path
+              d="M125.239 90.3333C123.971 89.6499 122.808 89.069 121.683 88.4198C116.252 85.2533 110.855 82.007 105.374 78.9374C104.602 78.5045 103.207 78.5045 102.435 78.9374C96.3484 82.3487 90.3332 85.8911 84.329 89.4506C83.1932 90.1226 82.2504 90.2821 81.098 89.4848C79.6755 88.4995 78.1759 87.6168 76.6596 86.8023C75.0883 85.9595 75.2868 85.3159 76.6707 84.4844C84.3896 79.86 92.1912 75.3779 99.7393 70.4687C102.783 68.4925 104.983 68.5266 108.015 70.4744C115.58 75.338 123.403 79.7631 131.111 84.3933C132.914 85.4754 132.892 85.9025 131.023 87.0188C129.137 88.1464 127.208 89.2057 125.239 90.3276V90.3333Z"
+              fill="white"
+            />
+            <path
+              d="M100.406 141.296C91.1833 136.025 82.6211 131.115 74.0371 126.249C72.601 125.438 71.9839 124.448 72.0003 122.713C72.0986 113.526 72.044 104.34 72.0495 95.1532C72.0495 94.5098 72.1204 93.861 72.186 92.7039C74.5449 94.1637 76.62 95.2668 78.4438 96.6888C79.0062 97.1268 79.0335 98.4353 79.0445 99.3436C79.0936 105.356 79.0772 111.369 79.0663 117.381C79.0663 119.079 79.6615 120.188 81.2997 121.074C87.2408 124.308 93.0945 127.692 98.9155 131.137C99.6254 131.558 100.275 132.64 100.341 133.462C100.526 135.9 100.406 138.366 100.406 141.296Z"
+              fill="white"
+            />
+          </svg>
         </div>
       </div>
     </main>

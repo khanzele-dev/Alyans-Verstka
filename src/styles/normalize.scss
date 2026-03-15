@@ -4,12 +4,19 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  font-family: "Geologica";
-  color: #000;
 }
 
 body {
   background-color: #fff;
+  font-family: "Geologica";
+  color: #000;
+}
+
+input,
+textarea,
+select {
+  font-family: "Geologica";
+  color: #000;
 }
 
 *,
@@ -36,6 +43,7 @@ body {
 }
 
 .btn {
+  font-family: "Geologica";
   font-weight: 500;
   font-size: 18px;
   line-height: 220%;
